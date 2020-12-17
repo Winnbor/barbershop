@@ -4,10 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BarberShop</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+      integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <!-- HEADER -->
-    <header>
+    <header class="header">
       <nav>
         <a href="#" aria-label="Логотип">
           <img
@@ -15,7 +28,7 @@
             alt="Логотип - Барбершоп Gallery Store"
           />
         </a>
-        <ul>
+        <ul class="unmarked-list">
           <li>
             <a href="#">О нас</a>
           </li>
@@ -31,23 +44,25 @@
         </ul>
       </nav>
       <a href="tel:+380441111111">+38 044 111 11 11</a>
-      <button type="button">онлайн-запись</button>
+      <button type="button" class="button button-light">онлайн-запись</button>
     </header>
 
     <!-- MAIN -->
     <main>
       <!-- hero section -->
       <section>
-        <div>
-          <ul>
+        <div class="hero-left">
+          <ul class="unmarked-list social-links">
             <li><a href="#" lang="en">Instagram</a></li>
             <li><a href="#" lang="en">Youtube</a></li>
           </ul>
         </div>
-        <div>
-          <p>A hair salon for men in Kyiv</p>
-          <h1>BarberShop</h1>
-          <p>
+        <div class="hero-right">
+          <p class="pre-header pre-header-light">
+            A hair salon for men in Kyiv
+          </p>
+          <h1 class="main-header">BarberShop</h1>
+          <p class="description description-light">
             Мы эксперты в модных мужских стрижках. <br />Работаем быстро,
             осторожно и со вкусом.
           </p>
@@ -56,7 +71,7 @@
 
       <!-- about us section -->
       <section>
-        <ul>
+        <ul class="unmarked-list">
           <li>
             <img
               src="./images/about-img-1.jpg"
@@ -75,9 +90,9 @@
           </li>
         </ul>
         <div>
-          <p>о нас</p>
-          <h2>Лучший Барбершоп твоего города</h2>
-          <p>
+          <p class="pre-header">о нас</p>
+          <h2 class="section-header">Лучший Барбершоп твоего города</h2>
+          <p class="description">
             Если ты хочешь добавить в свой образ больше уверенности – тебе точно
             к нам.
           </p>
@@ -88,21 +103,25 @@
             клиентами "на одной волне". Поэтому, мы всегда готовы
             усовершенствовать каждого, кто к нам приходит!
           </p>
-          <button type="button">онлайн-запись</button>
+          <button type="button" class="button button-dark">
+            онлайн-запись
+          </button>
         </div>
       </section>
 
       <!-- services and prices section -->
       <section>
-        <p>Проведи время в компании лучших мастеров</p>
-        <h2>Услуги и цены</h2>
-        <ul>
+        <p class="pre-header pre-header-light">
+          Проведи время в компании лучших мастеров
+        </p>
+        <h2 class="section-header section-header-light">Услуги и цены</h2>
+        <ul class="unmarked-list price-list">
           <li><span>Мужская стрижка</span><span>от 300 грн.</span></li>
           <li><span>Стрижка бороды</span><span>от 200 грн.</span></li>
           <li><span>Стрижка усов</span><span>от 200 грн.</span></li>
           <li><span>Бритье опасной бритвой</span><span>от 200 грн.</span></li>
         </ul>
-        <ul>
+        <ul class="unmarked-list price-list">
           <li><span>Cтрижка у стажера</span><span>от 50 грн.</span></li>
           <li><span>Стрижка под насадку</span><span>от 200 грн.</span></li>
           <li>
@@ -110,36 +129,36 @@
           </li>
           <li><span>Камуфлирование седины</span><span>от 200 грн.</span></li>
         </ul>
-        <button type="button">онлайн-запись</button>
+        <button type="button" class="button button-light">онлайн-запись</button>
       </section>
 
       <!-- old traditions section -->
       <section>
         <div>
-          <ul>
+          <ul class="unmarked-list">
             <li>
-              <p>600<sup>+</sup></p>
-              <p>Довольных клиентов в день</p>
+              <p class="counter">600<sup>+</sup></p>
+              <p class="counter-description">Довольных клиентов в день</p>
             </li>
             <li>
-              <p>50<sup>+</sup></p>
-              <p>Наград за отличный сервис</p>
+              <p class="counter">50<sup>+</sup></p>
+              <p class="counter-description">Наград за отличный сервис</p>
             </li>
           </ul>
-          <ul>
+          <ul class="unmarked-list">
             <li>
-              <p>20<sup>+</sup></p>
-              <p>Лучших мастеров Киева</p>
+              <p class="counter">20<sup>+</sup></p>
+              <p class="counter-description">Лучших мастеров Киева</p>
             </li>
             <li>
-              <p>100<sup>+</sup></p>
-              <p>Подарков постоянным клиентам</p>
+              <p class="counter">100<sup>+</sup></p>
+              <p class="counter-description">Подарков постоянным клиентам</p>
             </li>
           </ul>
         </div>
         <div>
-          <p>старая традиционная школа</p>
-          <h2>Почему приходят именно к нам?</h2>
+          <p class="pre-header">старая традиционная школа</p>
+          <h2 class="section-header">Почему приходят именно к нам?</h2>
           <p>
             О нас говорят только хорошее. Но лучше 1 раз увидеть и
             прочувствовать, чем 10 раз прочитать.
@@ -149,9 +168,9 @@
 
       <!-- our masters section -->
       <section>
-        <p>для настоящих ценителей атмосферы</p>
-        <h2>Наши мастера</h2>
-        <ul>
+        <p class="pre-header">для настоящих ценителей атмосферы</p>
+        <h2 class="section-header">Наши мастера</h2>
+        <ul class="unmarked-list">
           <li>
             <img
               src="./images/master-img-1.jpg"
@@ -159,8 +178,8 @@
               width="370"
               height="346"
             />
-            <h3>John Smith</h3>
-            <p>Extreme Barber</p>
+            <p class="master-name">John Smith</p>
+            <p class="master-grade">Extreme Barber</p>
             <ul>
               <li><a href="" aria-label="Иконка инстаграма"></a></li>
               <li><a href="" aria-label="Иконка Твиттер"></a></li>
@@ -175,8 +194,8 @@
               width="370"
               height="346"
             />
-            <h3>Michele Doe</h3>
-            <p>Extreme Barber</p>
+            <p class="master-name">Michele Doe</p>
+            <p class="master-grade">Extreme Barber</p>
             <ul>
               <li><a href="" aria-label="Иконка инстаграма"></a></li>
               <li><a href="" aria-label="Иконка Твиттер"></a></li>
@@ -191,8 +210,8 @@
               width="370"
               height="346"
             />
-            <h3>Alan Black</h3>
-            <p>Extreme Barber</p>
+            <p class="master-name">Alan Black</p>
+            <p class="master-grade">Extreme Barber</p>
             <ul>
               <li><a href="" aria-label="Иконка инстаграма"></a></li>
               <li><a href="" aria-label="Иконка Твиттер"></a></li>
@@ -206,8 +225,8 @@
       <!-- gallery section -->
       <section>
         <h2 hidden>Галерея</h2>
-        <p>На латинском языке “барба” означает “борода”</p>
-        <ul>
+        <p class="pre-header">На латинском языке “барба” означает “борода”</p>
+        <ul class="unmarked-list">
           <li>
             <img
               src="./images/gallery-img-1.jpg"
@@ -235,7 +254,7 @@
           <li>
             <img
               src="./images/gallery-img-4.jpg"
-              alt="Барбершоп - мужская стрижка"
+              alt="Барбершоп - работа с бритвой"
               width="270"
               height="360"
             />
@@ -247,8 +266,8 @@
       <section>
         <!-- form here -->
         <div>
-          <h2>Контакты</h2>
-          <ul>
+          <h2 class="section-header section-header-light">Контакты</h2>
+          <ul class="unmarked-list contacts-info">
             <li>
               <address><a href="#">ул. Васильковая, 7А Киев, 08132</a></address>
             </li>
@@ -256,19 +275,21 @@
               <a href="tel:+380441111111">+38 044 111 11 11</a>
             </li>
             <li>
-              <a href="mailto:barbershop@email.com">barbershop@email.com</a>
+              <a href="mailto:barbershop@email.com" class="contacts-mail"
+                >barbershop@email.com</a
+              >
             </li>
           </ul>
-          <p>время работы</p>
-          <p>Ежедневно с 9:00 до 22:00</p>
+          <p class="pre-header">время работы</p>
+          <p class="working-hours">Ежедневно с 9:00 до 22:00</p>
         </div>
       </section>
     </main>
 
     <!-- FOOTER -->
-    <footer>
+    <footer class="footer">
       <p>&copy; Copyright 2020</p>
-      <ul>
+      <ul class="unmarked-list social-links">
         <li><a href="#" lang="en">Instagram</a></li>
         <li><a href="#" lang="en">Youtube</a></li>
       </ul>
