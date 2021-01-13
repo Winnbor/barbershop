@@ -56,10 +56,10 @@
     <!-- MAIN -->
     <main>
       <!-- hero section -->
-      <section>
+      <section class="hero-section">
         <div class="container hero-container">
           <div class="hero-left">
-            <ul class="unmarked-list social-links">
+            <ul class="unmarked-list social-links top">
               <li><a href="#" lang="en">Instagram</a></li>
               <li><a href="#" lang="en">Youtube</a></li>
             </ul>
@@ -98,14 +98,14 @@
               />
             </li>
           </ul>
-          <div>
+          <div class="about-us-info">
             <p class="pre-header">о нас</p>
             <h2 class="section-header">Лучший Барбершоп твоего города</h2>
             <p class="description">
               Если ты хочешь добавить в свой образ больше уверенности – тебе
               точно к нам.
             </p>
-            <p>
+            <p class="about-us-text">
               Мы команда, которая никогда не останавливается на достигнутом и
               жаждет перемен. И когда ты попадешь в руки нашего мастера, то уже
               никогда не сможешь быть прежним. Мы команда, которая всегда с
@@ -125,7 +125,9 @@
           <p class="pre-header pre-header-light">
             Проведи время в компании лучших мастеров
           </p>
-          <h2 class="section-header section-header-light">Услуги и цены</h2>
+          <h2 class="section-header section-header-light services-header">
+            Услуги и цены
+          </h2>
           <div class="price-list-wrapper">
             <ul class="unmarked-list price-list">
               <li><span>Мужская стрижка</span><span>от 300 грн.</span></li>
@@ -146,7 +148,7 @@
               </li>
             </ul>
           </div>
-          <button type="button" class="button button-light">
+          <button type="button" class="button button-light services-button">
             онлайн-запись
           </button>
         </div>
@@ -155,8 +157,8 @@
       <!-- old traditions section -->
       <section>
         <div class="container traditions-container">
-          <div>
-            <ul class="unmarked-list">
+          <div class="traditions-left">
+            <ul class="unmarked-list counter-cards">
               <li>
                 <p class="counter">600<sup>+</sup></p>
                 <p class="counter-description">Довольных клиентов в день</p>
@@ -166,7 +168,7 @@
                 <p class="counter-description">Наград за отличный сервис</p>
               </li>
             </ul>
-            <ul class="unmarked-list">
+            <ul class="unmarked-list counter-cards">
               <li>
                 <p class="counter">20<sup>+</sup></p>
                 <p class="counter-description">Лучших мастеров Киева</p>
@@ -177,10 +179,12 @@
               </li>
             </ul>
           </div>
-          <div>
+          <div class="traditions-right">
             <p class="pre-header">старая традиционная школа</p>
-            <h2 class="section-header">Почему приходят именно к нам?</h2>
-            <p>
+            <h2 class="section-header traditions-header">
+              Почему приходят именно к нам?
+            </h2>
+            <p class="description traditions-description">
               О нас говорят только хорошее. Но лучше 1 раз увидеть и
               прочувствовать, чем 10 раз прочитать.
             </p>
@@ -192,7 +196,7 @@
       <section class="masters-section">
         <div class="container masters-container">
           <p class="pre-header">для настоящих ценителей атмосферы</p>
-          <h2 class="section-header">Наши мастера</h2>
+          <h2 class="section-header masters-header">Наши мастера</h2>
           <ul class="unmarked-list masters-list">
             <li>
               <img
@@ -203,7 +207,7 @@
               />
               <p class="master-name">John Smith</p>
               <p class="master-grade">Extreme Barber</p>
-              <ul>
+              <ul class="unmarked-list master-social-icons">
                 <li><a href="" aria-label="Иконка инстаграма"></a></li>
                 <li><a href="" aria-label="Иконка Твиттер"></a></li>
                 <li><a href="" aria-label="Иконка Фейсбук"></a></li>
@@ -219,7 +223,7 @@
               />
               <p class="master-name">Michele Doe</p>
               <p class="master-grade">Extreme Barber</p>
-              <ul>
+              <ul class="unmarked-list master-social-icons">
                 <li><a href="" aria-label="Иконка инстаграма"></a></li>
                 <li><a href="" aria-label="Иконка Твиттер"></a></li>
                 <li><a href="" aria-label="Иконка Фейсбук"></a></li>
@@ -235,7 +239,7 @@
               />
               <p class="master-name">Alan Black</p>
               <p class="master-grade">Extreme Barber</p>
-              <ul>
+              <ul class="unmarked-list master-social-icons">
                 <li><a href="" aria-label="Иконка инстаграма"></a></li>
                 <li><a href="" aria-label="Иконка Твиттер"></a></li>
                 <li><a href="" aria-label="Иконка Фейсбук"></a></li>
@@ -250,7 +254,9 @@
       <section>
         <div class="container gallery-container">
           <h2 hidden>Галерея</h2>
-          <p class="pre-header">На латинском языке “барба” означает “борода”</p>
+          <p class="pre-header gallary">
+            На латинском языке “барба” означает “борода”
+          </p>
           <ul class="unmarked-list gallary-images-list">
             <li>
               <img
@@ -289,36 +295,46 @@
       </section>
 
       <!-- contacts section -->
-      <section>
-        <!-- form here -->
-        <div>
-          <h2 class="section-header section-header-light">Контакты</h2>
-          <ul class="unmarked-list contacts-info">
-            <li>
-              <address><a href="#">ул. Васильковая, 7А Киев, 08132</a></address>
-            </li>
-            <li>
-              <a href="tel:+380441111111">+38 044 111 11 11</a>
-            </li>
-            <li>
-              <a href="mailto:barbershop@email.com" class="contacts-mail"
-                >barbershop@email.com</a
-              >
-            </li>
-          </ul>
-          <p class="pre-header">время работы</p>
-          <p class="working-hours">Ежедневно с 9:00 до 22:00</p>
+      <section class="contacts-section">
+        <div class="container contacts-container">
+          <div class="form-wrapper">
+            <!-- form here -->
+          </div>
+          <div class="contacts-wrapper">
+            <h2 class="section-header section-header-light contacts-header">
+              Контакты
+            </h2>
+            <ul class="unmarked-list contacts-info">
+              <li>
+                <address>
+                  <a href="#">ул. Васильковая, 7А Киев, 08132</a>
+                </address>
+              </li>
+              <li>
+                <a href="tel:+380441111111">+38 044 111 11 11</a>
+              </li>
+              <li>
+                <a href="mailto:barbershop@email.com" class="contacts-mail"
+                  >barbershop@email.com</a
+                >
+              </li>
+            </ul>
+            <p class="pre-header pre-header-white">время работы</p>
+            <p class="working-hours">Ежедневно с 9:00 до 22:00</p>
+          </div>
         </div>
       </section>
     </main>
 
     <!-- FOOTER -->
     <footer class="footer">
-      <p>&copy; Copyright 2020</p>
-      <ul class="unmarked-list social-links">
-        <li><a href="#" lang="en">Instagram</a></li>
-        <li><a href="#" lang="en">Youtube</a></li>
-      </ul>
+      <div class="container footer-container">
+        <p>&copy; Copyright 2020</p>
+        <ul class="unmarked-list social-links">
+          <li><a href="#" lang="en">Instagram</a></li>
+          <li><a href="#" lang="en">Youtube</a></li>
+        </ul>
+      </div>
     </footer>
   </body>
 </html>
