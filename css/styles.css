@@ -81,6 +81,7 @@ address {
   color: var(--txt-c-dark);
   margin-top: 0%;
   margin-bottom: 20px;
+  align-items: center;
 }
 .description {
   font-size: 18px;
@@ -163,7 +164,8 @@ address {
 .contacts-container,
 .footer-container,
 .social-links,
-.master-social-icons {
+.master-social-icons,
+.pre-header {
   display: flex;
 }
 .hero-container {
@@ -182,6 +184,13 @@ address {
   padding-bottom: 205px;
   padding-left: 100px;
   padding-right: 55px;
+  background-image: linear-gradient(
+      rgba(25, 28, 38, 0.2),
+      rgba(25, 28, 38, 0.2)
+    ),
+    url(../images/slider-img-3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .social-links a,
 .social-links a:visited {
@@ -194,6 +203,13 @@ address {
 .social-links a:hover,
 .social-links a:active {
   color: var(--txt-c-accent);
+}
+.social-links.top::before {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 1px;
+  background-color: var(--txt-c-dark);
 }
 .main-header {
   font-weight: 700;
@@ -209,6 +225,7 @@ address {
 }
 .description-light {
   color: var(--txt-c-gray-light);
+  margin-bottom: 0;
 }
 
 /* about us */
@@ -226,11 +243,28 @@ address {
   margin-top: 0;
   margin-bottom: 40px;
 }
+.pre-header::before {
+  content: '';
+  display: flex;
+  width: 60px;
+  height: 1px;
+  background-color: var(--txt-c-dark);
+  margin-right: 20px;
+}
+.pre-header-light::before {
+  background-color: var(--txt-c-gray-light);
+  opacity: 0.6;
+}
 
 /* services and prices */
 
 .services-section {
   background-color: var(--c-dark);
+}
+.services-container {
+  background-image: url('../images/bg-img-1-transp.png');
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .services-header {
   margin-bottom: 45px;
@@ -342,7 +376,10 @@ address {
 .master-social-icons {
   justify-content: center;
 }
-.master-social-icons li {
+.master-social-icons a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 44px;
   height: 44px;
   background-color: var(--c-light);
@@ -350,6 +387,14 @@ address {
 }
 .master-social-icons li:not(:last-child) {
   margin-right: 10px;
+}
+.master-social-icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--txt-c-dark);
+}
+.master-social-icons li:hover .master-social-icon {
+  fill: var(--txt-c-accent);
 }
 
 /* gallary */
