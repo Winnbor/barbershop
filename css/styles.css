@@ -12,7 +12,6 @@
 }
 /* COMMON */
 
-section,
 .price-list {
   outline: 1px solid orangered;
 }
@@ -113,7 +112,8 @@ address {
 
 .header {
   width: 100%;
-  background-color: teal;
+  position: absolute;
+  z-index: 2;
 }
 .header-container,
 .header-navigation,
@@ -165,7 +165,8 @@ address {
 .footer-container,
 .social-links,
 .master-social-icons,
-.pre-header {
+.pre-header,
+.hero-left {
   display: flex;
 }
 .hero-container {
@@ -175,6 +176,8 @@ address {
 .hero-left {
   width: 155px;
   background-color: var(--c-light);
+  align-items: flex-end;
+  position: relative;
 }
 .hero-right {
   max-width: 100%;
@@ -204,12 +207,23 @@ address {
 .social-links a:active {
   color: var(--txt-c-accent);
 }
+.social-links.top {
+  transform: rotate(-90deg);
+  transform-origin: center left;
+  position: absolute;
+  left: 80px;
+  align-items: center;
+}
 .social-links.top::before {
   content: '';
   display: block;
   width: 60px;
   height: 1px;
   background-color: var(--txt-c-dark);
+  margin-left: 30px;
+}
+.social-links li {
+  margin-left: 40px;
 }
 .main-header {
   font-weight: 700;
