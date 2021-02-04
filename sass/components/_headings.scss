@@ -1,0 +1,30 @@
+.section-header {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+.section-header-light {
+  color: $txt-c-light;
+}
+.pre-header {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.4;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: $txt-c-dark;
+  margin-top: 0%;
+  margin-bottom: 20px;
+  align-items: center;
+}
+.description {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: $txt-c-gray;
+  margin-top: 0;
+  margin-bottom: 20px;
+}

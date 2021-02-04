@@ -1,0 +1,38 @@
+.contacts-section {
+  background-color: $c-dark;
+}
+.contacts-container {
+  padding-left: 0;
+  padding-right: 0;
+}
+.form-wrapper {
+  padding-left: 55px;
+  padding-right: 40px;
+}
+.contacts-wrapper {
+  padding-left: 100px;
+  padding-right: 55px;
+  background-image: url(../images/bg-img-2-transp.png);
+}
+.contacts-header {
+  margin-bottom: 40px;
+}
+.contacts-info {
+  margin-bottom: 70px;
+}
+.contacts-info li:not(:last-child) {
+  margin-bottom: 20px;
+}
+.working-hours,
+.contacts-info a {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: $txt-c-gray-light;
+}
+.contacts-mail {
+  text-decoration: underline;
+}
+.pre-header-white {
+  color: $txt-c-light;
+}

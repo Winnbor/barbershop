@@ -1,0 +1,33 @@
+.masters-section {
+  background-color: $c-bg-secondary;
+}
+.masters-header {
+  margin-bottom: 45px;
+}
+.masters-list > li:not(:last-child) {
+  margin-right: 30px;
+}
+.masters-list img {
+  margin-bottom: 30px;
+}
+.master-name {
+  font-size: 18px;
+  line-height: 1.39;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: $txt-c-dark;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.master-grade {
+  font-size: 14px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: $txt-c-accent;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+.master-social-icons {
+  justify-content: center;
+}

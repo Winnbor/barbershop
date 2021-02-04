@@ -1,0 +1,28 @@
+.about-images-list {
+  margin-right: 75px;
+}
+.about-images-list li:not(:last-child) {
+  margin-right: 30px;
+}
+.about-us-text {
+  font-size: 14px;
+  line-height: 1.86;
+  letter-spacing: 0.02em;
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+.pre-header::before {
+  content: '';
+  display: flex;
+  width: 60px;
+  height: 1px;
+  background-color: $txt-c-dark;
+  margin-right: 20px;
+}
+.pre-header-light::before {
+  background-color: $txt-c-gray-light;
+  opacity: 0.6;
+}
+.about-us-info {
+  max-width: 41%;
+}

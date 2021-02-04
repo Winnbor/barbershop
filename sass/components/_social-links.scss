@@ -1,0 +1,36 @@
+.social-links a,
+.social-links a:visited {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.4;
+  letter-spacing: 0.2em;
+  color: $txt-c-dark;
+}
+.social-links a:hover,
+.social-links a:active {
+  color: $txt-c-accent;
+}
+.social-links li {
+  margin-left: 40px;
+}
+
+.master-social-icons a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color: $c-light;
+  border-radius: 50%;
+}
+.master-social-icons li:not(:last-child) {
+  margin-right: 10px;
+}
+.master-social-icon {
+  width: 20px;
+  height: 20px;
+  fill: $txt-c-dark;
+}
+.master-social-icons li:hover .master-social-icon {
+  fill: $txt-c-accent;
+}

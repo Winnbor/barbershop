@@ -1,0 +1,42 @@
+.services-section {
+  background-color: $c-dark;
+}
+.services-container {
+  background-image: url('../images/bg-img-1-transp.png');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.services-header {
+  margin-bottom: 45px;
+}
+.price-list {
+  width: 50%;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: $txt-c-gray-light;
+  padding: 30px 40px;
+  margin-bottom: 50px;
+}
+.price-list li:not(:last-child) {
+  margin-bottom: 20px;
+}
+.gradient-left {
+  background-image: linear-gradient(
+    to bottom,
+    rgba(23, 26, 36, 1),
+    rgba(23, 26, 36, 0.2)
+  );
+}
+.gradient-right {
+  background-image: linear-gradient(
+    to bottom,
+    rgba(9, 11, 19, 1),
+    rgba(9, 11, 19, 0.2)
+  );
+}
+.services-button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

@@ -1,0 +1,64 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: $txt-c-gray;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Raleway', sans-serif;
+  color: $txt-c-dark;
+}
+a {
+  text-decoration: none;
+}
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+address {
+  font-style: normal;
+}
+.container {
+  max-width: 1280px;
+  padding-left: 55px;
+  padding-right: 55px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.about-container,
+.services-container,
+.traditions-container,
+.masters-container,
+.gallery-container,
+.form-wrapper,
+.contacts-wrapper {
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+.unmarked-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.hero-container,
+.about-container,
+.about-images-list,
+.traditions-container,
+.price-list-wrapper,
+.masters-list,
+.gallary-images-list,
+.counter-cards,
+.contacts-container,
+.footer-container,
+.social-links,
+.master-social-icons,
+.pre-header,
+.hero-left,
+.contacts-form {
+  display: flex;
+}

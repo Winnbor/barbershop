@@ -1,0 +1,23 @@
+.contacts-form {
+  outline: 1px solid orangered;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.input {
+  border: none;
+  border-bottom: 1px solid $txt-c-gray-form;
+  /* background-color: transparent; */
+  width: 48%;
+  display: block;
+  height: 24px;
+  margin-bottom: 44px;
+}
+.input.textarea {
+  resize: none;
+  width: 100%;
+  height: initial;
+}
+.form-btn {
+  padding-left: 38px;
+  padding-right: 38px;
+}

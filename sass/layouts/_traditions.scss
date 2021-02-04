@@ -1,0 +1,52 @@
+.counter {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: $txt-c-dark;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+.counter sup {
+  color: $txt-c-accent;
+  font-weight: 600;
+  font-size: 16px;
+  vertical-align: super;
+}
+.counter-description {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-align: center;
+  color: $txt-c-dark;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.traditions-left,
+.form-wrapper {
+  width: calc(50% + 15px);
+}
+.traditions-left {
+  padding-left: 100px;
+}
+.traditions-right,
+.contacts-wrapper {
+  width: calc(50% - 15px);
+}
+.counter-cards li {
+  max-width: 170px;
+  max-height: 135px;
+  padding: 20px;
+  background-color: $c-bg-secondary;
+}
+.counter-cards li:nth-child(even) {
+  margin-left: 30px;
+  margin-top: 30px;
+}
+.traditions-header {
+  max-width: 70%;
+}
+.traditions-description {
+  max-width: 80%;
+}

@@ -1,0 +1,25 @@
+.footer p {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  color: $txt-c-gray-light;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.footer-container {
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-top: 55px;
+  padding-bottom: 55px;
+}
+.footer-links {
+  align-items: center;
+}
+.footer-links::before {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 1px;
+  background-color: $txt-c-dark;
+}
