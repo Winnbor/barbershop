@@ -2,6 +2,19 @@
   width: 100%;
   position: absolute;
   z-index: 2;
+
+  a,
+  a:visited {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.3;
+    letter-spacing: 0.1em;
+    color: $txt-c-light;
+  }
+  a:hover,
+  a:active {
+    color: $txt-c-accent;
+  }
 }
 .header-container,
 .header-navigation,
@@ -13,18 +26,6 @@
 .header-container {
   justify-content: space-between;
   padding-top: 40px;
-}
-.header a,
-.header a:visited {
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 1.3;
-  letter-spacing: 0.1em;
-  color: $txt-c-light;
-}
-.header a:hover,
-.header a:active {
-  color: $txt-c-accent;
 }
 
 .header-navigation > a {

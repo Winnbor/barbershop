@@ -11,10 +11,13 @@
   border-radius: 25px;
   background-color: transparent;
   outline: none;
+  transition: background-color 250ms;
+
+  &:hover {
+    background-color: $txt-c-accent;
+  }
 }
-.button:hover {
-  background-color: $txt-c-accent;
-}
+
 .button-light {
   color: $txt-c-light;
 }
